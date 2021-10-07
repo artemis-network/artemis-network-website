@@ -1,0 +1,63 @@
+.artemis_network {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12rem 2rem;
+}
+
+.artemis_network .title {
+  text-align: center;
+  font-family: var(--title-font-style);
+  font-size: 4rem;
+  font-weight: bold;
+  -webkit-text-stroke: 0.25px var(--primary-font-color);
+  text-shadow: 0.05rem 0.05rem 0 var(--primary-font-color);
+  color: #222629;
+}
+
+.artemis_network .tag {
+  font-family: var(--subtitle-font-style);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.scroller_text {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .artemis_network {
+    display: 100vh;
+  }
+  .scroller_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+  }
+  .scroller_text img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+  }
+  .scroller_text p {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .artemis_network {
+    height: 82vh;
+  }
+
+  .artemis_network .title {
+    font-size: 6rem;
+    font-weight: bold;
+  }
+  .artemis_network .tag {
+    text-align: center;
+    font-size: 2rem;
+  }
+}

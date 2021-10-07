@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600&family=Lobster&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+*,
+html,
+body,
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-style);
+  color: var(--primary-font-color);
+}
+
+html {
+  cursor: url("../assets/cursor.png") 16 16, pointer;
+  overflow-x: hidden;
+  background-color: #222629;
+}
+
+#particles-js {
+  position: fixed;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+}
+
+.subtitle {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgba(255, 0, 128),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+}
+
+.socials,
+.verticals {
+  display: none;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+.buttons_group {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons_group div {
+  padding: 1rem 2rem;
+  margin: 1rem 0.5rem;
+  box-shadow: var(--card-shadow);
+  border-radius: 2vh;
+}
+
+.buttons_group div img {
+  height: 4rem;
+  width: 4rem;
+}
+
+#values,
+#what_we_do,
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    display: flex;
+    justify-self: center;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 10vh;
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(
+      0.25turn,
+      rgba(255, 249, 34),
+      rgba(255, 0, 128),
+      rgba(56, 2, 155, 0)
+    );
+    border-image-slice: 1;
+  }
+
+  #values_mobile,
+  #what_we_do_mobile,
+  .buttons_group {
+    display: none;
+  }
+
+  #values,
+  #what_we_do,
+  .hide {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .main {
+    width: 100%;
+  }
+  .subtitle {
+    margin: 0 0 2rem 0;
+  }
+  .socials,
+  .verticals {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+  }
+}

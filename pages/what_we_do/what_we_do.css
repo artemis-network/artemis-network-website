@@ -1,0 +1,34 @@
+@media screen and (min-width: 1024px) {
+  .what_we_do_desktop {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .what_we_do {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 12rem 0;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--card-boder-radius);
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    width: 30rem;
+    margin: 4rem;
+    padding: 4rem;
+  }
+  .product img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: var(--card-boder-radius);
+    background: var(--card-background);
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-backdrop);
+    margin: 2rem;
+  }
+}

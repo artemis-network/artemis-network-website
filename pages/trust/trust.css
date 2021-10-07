@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
+.negative_margin {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .trust {
+    display: grid;
+    justify-content: center;
+    justify-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .negative_margin {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: none;
+    padding: 10rem 0;
+    background: black;
+    opacity: 0.85;
+  }
+
+  .headline {
+    font-size: 4rem;
+    font-family: "Fira Code", monospace;
+    font-weight: bold;
+  }
+
+  .sub_trust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    column-count: 2;
+    font-size: 1.25rem;
+  }
+
+  .highlight_cursor {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    box-shadow: 2px -3px 41px -1px rgba(250, 250, 250, 0.64);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    visibility: hidden;
+    opacity: 1;
+    transition-duration: 0.1s;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headline {
+    font-size: 8rem;
+  }
+
+  .negative_margin {
+    margin: 0 15rem;
+  }
+}

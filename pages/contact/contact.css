@@ -1,0 +1,75 @@
+.map {
+  display: none;
+}
+
+.contact_page {
+  height: 100vh;
+  background: var(--primary-font-color);
+}
+
+.form {
+  border-radius: 2vh;
+  background: var(--card-background);
+  box-shadow: var(--card-shadow);
+  padding: 2rem;
+  margin: 2rem;
+  min-width: 20rem;
+}
+
+textarea,
+input {
+  outline: none;
+  border: none;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 2vh;
+  background: var(--card-background);
+  box-shadow: var(--card-shadow);
+  width: 100%;
+  resize: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 2rem 1rem;
+  border-radius: 2vh;
+  background: var(--card-background);
+  box-shadow: var(--card-shadow);
+  width: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  .two_split {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  input,
+  textarea,
+  button {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    border: #31558d;
+    box-shadow: var(--card-shadow);
+    border-radius: 2vh;
+  }
+
+  .two_split {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
