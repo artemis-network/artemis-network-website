@@ -25,6 +25,11 @@ html {
   width: 100vw;
 }
 
+.vps {
+  display: flex;
+  margin: 2rem 0;
+}
+
 .main {
   display: grid;
   grid-template-columns: 1fr;

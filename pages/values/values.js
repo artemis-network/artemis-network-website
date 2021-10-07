@@ -5,7 +5,7 @@ let sections = gsap.utils.toArray(".hpanel");
 gsap.set(sections, { xPercent: -100 * (sections.length - 1) })
 
 gsap.to(sections, {
-	xPercent: 30,
+	xPercent: 50,
 	ease: "none",
 	scrollTrigger: {
 		trigger: "#values",

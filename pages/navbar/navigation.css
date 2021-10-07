@@ -20,7 +20,7 @@ a {
   }
   .navigation_bar {
     display: flex;
-    height: 3.5rem;
+    height: 5.5rem;
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
     justify-content: center;
@@ -53,10 +53,18 @@ a {
   .bar_link img {
     height: 4rem;
     width: 5.75rem;
-    border-radius: 20%;
-    background: var(--card-background);
-    box-shadow: var(--card-shadow);
+    padding: 0.35rem;
+    background: white;
+    box-shadow: 0px 0px 8px 0px;
+    border-radius: 1rem;
+
     transform: translateX(0.75rem) translateY(-0.25rem);
+    transition: 0.5s all;
+  }
+
+  .bar_link img:hover {
+    transform: scale(1.1);
+    transition: 0.5s all;
   }
 
   .cta {

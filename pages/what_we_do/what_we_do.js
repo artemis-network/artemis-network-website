@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 let container_we = document.getElementById("what_we_do")
 
 gsap.to(container_we, {
-	xPercent: -100,
+	xPercent: -150,
 	ease: "none",
 	scrollTrigger: {
 		trigger: container_we,

@@ -9,6 +9,7 @@ function input(event) {
 }
 
 function submit(event) {
+	event.preventDefault()
 	anime({
 		targets: event.target,
 		scale: [1.15, 1],

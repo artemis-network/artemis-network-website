@@ -3,8 +3,8 @@
 }
 
 .contact_page {
-  height: 100vh;
-  background: var(--primary-font-color);
+  height: 90vh;
+  /* background: var(--primary-font-color); */
 }
 
 .form {
