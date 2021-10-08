@@ -84,14 +84,3 @@ d3.json("../../assets/custom.geo.json").then(function (data) {
 
 })
 
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.utils.toArray(".vpanel").forEach((panel, i) => {
-// 	ScrollTrigger.create({
-// 		trigger: panel,
-// 		start: "top top",
-// 		pin: true,
-// 		pinSpacing: false
-// 	});
-// });
-

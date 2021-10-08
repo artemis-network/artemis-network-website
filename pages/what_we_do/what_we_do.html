@@ -57,5 +57,20 @@
 	</div>
 </div>
 
+<script>
+	gsap.registerPlugin(ScrollTrigger);
 
-<script src="./pages/what_we_do/what_we_do.js"></script>
+	let container_we = document.getElementById("what_we_do")
+
+	gsap.to(container_we, {
+		xPercent: -100,
+		ease: "none",
+		scrollTrigger: {
+			trigger: container_we,
+			pin: true,
+			scrub: 1,
+			snap: false,
+			end: () => "+=" + container_we.offsetWidth
+		}
+	})
+</script>
