@@ -10,6 +10,7 @@ const contact = document.getElementById("contact")
 let navbar = document.querySelector("#navbar")
 let container = document.querySelector('html')
 
+
 const scroller = new IntersectionObserver(function (entries) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
@@ -22,6 +23,7 @@ const scroller = new IntersectionObserver(function (entries) {
 					targets: [points.children[1], points.children[2], points.children[3], points.children[4], points.children[5]],
 					scale: 1,
 				})
+				nav
 			}
 			if (entry.target.id === 'what_we_do') {
 				anime({
@@ -34,7 +36,6 @@ const scroller = new IntersectionObserver(function (entries) {
 				})
 			}
 			if (entry.target.id === 'trust') {
-
 				anime({
 					targets: points.children[2],
 					scale: 2

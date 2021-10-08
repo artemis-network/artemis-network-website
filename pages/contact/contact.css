@@ -9,6 +9,7 @@
   padding: 2rem;
   margin: 2rem;
   max-width: 30rem;
+  min-height: 20rem;
 }
 
 textarea,
