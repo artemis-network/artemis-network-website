@@ -1,33 +1,61 @@
 @media screen and (min-width: 1024px) {
-  .values_desktop {
-    width: 100vw;
-    height: 100vh;
+  #values {
   }
+
   .values {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 12rem 0;
+    padding: 8rem 0;
+    width: 100%;
+    column-gap: 2rem;
   }
 
-  .product {
+  .value {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    border-radius: var(--card-boder-radius);
-    background: var(--card-background);
-    box-shadow: var(--card-shadow);
-    width: 30rem;
+    border-radius: 2vh;
+    background-image: linear-gradient(
+      to right top,
+      #f0ecf8,
+      #f0ecf9,
+      #f0ecf9,
+      #f1ebfa,
+      #f1ebfa,
+      #f1ebfa,
+      #f1ebfa,
+      #f1ebfa,
+      #f1ebfa,
+      #f0ecf9,
+      #f0ecf9,
+      #f0ecf8
+    );
     margin: 4rem;
     padding: 4rem;
+    column-gap: 2rem;
   }
-  .product img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: var(--card-boder-radius);
-    background: var(--card-background);
-    box-shadow: var(--card-shadow);
-    backdrop-filter: var(--card-backdrop);
-    margin: 2rem;
+  .value img {
+    width: 22rem;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    column-gap: 2rem;
+    word-break: keep-all;
+  }
+
+  .value .content h2 {
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: left;
+  }
+
+  .value .content p {
+    text-align: left;
+    line-height: 1.5rem;
   }
 }

@@ -2,9 +2,10 @@ function input(event) {
 	event.target.innerText = ''
 	anime({
 		targets: event.target,
-		scale: [1.15, 1],
+		scale: [1.05, 1],
 		color: '#1f2421',
-		backgroundColor: ['#80b918', '#ffff3f']
+		duration: 1000,
+		backgroundColor: ['#F2EFF8', "#ffffff"]
 	});
 }
 
@@ -12,8 +13,9 @@ function submit(event) {
 	event.preventDefault()
 	anime({
 		targets: event.target,
-		scale: [1.15, 1],
-		backgroundColor: ['#80b918', '#ffff3f'],
+		scale: [1.05, 1],
+		backgroundColor: ['#F2EFF8', "#ffffff"],
+		duration: 1000,
 		color: '#1f2421',
 	});
 
@@ -58,11 +60,11 @@ d3.json("../../assets/custom.geo.json").then(function (data) {
 		.selectAll("path")
 		.data(data.features)
 		.join("path")
-		.attr("fill", "#86c232")
+		.attr("fill", "#f0ecf8")
 		.attr("d", d3.geoPath()
 			.projection(projection)
 		)
-		.style("stroke", "#fff");
+		.style("stroke", "#A4A1BE");
 
 	svg.append("g")
 		.selectAll("g")

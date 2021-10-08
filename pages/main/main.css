@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 12rem 2rem;
+  align-items: center;
+  padding: 16rem 0;
 }
 
 .artemis_network .title {
@@ -10,8 +11,8 @@
   font-family: var(--title-font-style);
   font-size: 4rem;
   font-weight: bold;
-  -webkit-text-stroke: 0.25px var(--primary-font-color);
-  text-shadow: 0.05rem 0.05rem 0 var(--primary-font-color);
+  -webkit-text-stroke: 0.25px #5f9f4a;
+  text-shadow: 0.05rem 0.05rem 0 #5f9f4a;
   color: #222629;
 }
 
@@ -19,6 +20,9 @@
   font-family: var(--subtitle-font-style);
   font-size: 1rem;
   text-align: center;
+  -webkit-text-stroke: 0.25px #5f9f4a;
+  text-shadow: 0.05rem 0.05rem 0 #5f9f4a;
+  color: #222629;
 }
 
 .scroller_text {
@@ -26,9 +30,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .artemis_network {
-    display: 100vh;
-  }
   .scroller_text {
     display: flex;
     flex-direction: column;
@@ -48,10 +49,6 @@
 }
 
 @media screen and (min-width: 1366px) {
-  .artemis_network {
-    height: 82vh;
-  }
-
   .artemis_network .title {
     font-size: 6rem;
     font-weight: bold;

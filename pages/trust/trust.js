@@ -1,4 +1,4 @@
-const trust_container = document.querySelector('#trust')
+const trust_container = document.querySelector('.trust_content')
 
 const h_cursor = document.querySelector('.highlight_cursor')
 
