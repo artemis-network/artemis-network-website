@@ -1,13 +1,8 @@
 @media screen and (min-width: 1024px) {
-  .pin-spacer {
-  }
-
   .what_we_do {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-
     padding: 8rem 0;
-    /* padding: 2rem 0; */
     width: 100%;
     column-gap: 2rem;
   }

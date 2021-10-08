@@ -7,7 +7,7 @@
   row-gap: 0.5rem;
   grid-template-columns: 1fr;
   border-radius: var(--card-boder-radius);
-  background: var(--navbar-color);
+  /* background: var(--navbar-color); */
   box-shadow: var(--card-shadow);
 }
 

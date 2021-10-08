@@ -94,3 +94,4 @@ gsap.utils.toArray(".vpanel").forEach((panel, i) => {
 		pinSpacing: false
 	});
 });
+

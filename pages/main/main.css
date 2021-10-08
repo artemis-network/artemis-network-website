@@ -1,9 +1,16 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
 .artemis_network {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 16rem 0;
+  background-color: #ebffea;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg fill-opacity='0.15'%3E%3Cpolygon fill='%23cdfdc9' points='800 100 0 200 0 800 1600 800 1600 200'/%3E%3Cpolygon fill='%23affaa7' points='800 200 0 400 0 800 1600 800 1600 400'/%3E%3Cpolygon fill='%2391f886' points='800 300 0 600 0 800 1600 800 1600 600'/%3E%3Cpolygon fill='%2374f564' points='1600 800 800 400 0 800'/%3E%3Cpolygon fill='%2356f343' points='1280 800 800 500 320 800'/%3E%3Cpolygon fill='%2338f021' points='533.3 800 1066.7 800 800 600'/%3E%3Cpolygon fill='%231AEE00' points='684.1 800 914.3 800 800 700'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
 .artemis_network .title {
@@ -11,9 +18,9 @@
   font-family: var(--title-font-style);
   font-size: 4rem;
   font-weight: bold;
-  -webkit-text-stroke: 0.25px #5f9f4a;
-  text-shadow: 0.05rem 0.05rem 0 #5f9f4a;
-  color: #222629;
+  color: #cbfdc7;
+  -webkit-text-stroke: 0.25px #32502e;
+  text-shadow: 0.05rem 0.05rem 0 #32502e;
 }
 
 .artemis_network .tag {
@@ -23,6 +30,10 @@
   -webkit-text-stroke: 0.25px #5f9f4a;
   text-shadow: 0.05rem 0.05rem 0 #5f9f4a;
   color: #222629;
+
+  color: #5f9f4a;
+  -webkit-text-stroke: 0.25px #222629;
+  text-shadow: 0.05rem 0.05rem 0 #222629;
 }
 
 .scroller_text {
@@ -36,6 +47,7 @@
     justify-content: center;
     align-items: center;
     margin: 2rem;
+    transform: translateY(16rem);
   }
   .scroller_text img {
     height: 3rem;
@@ -57,4 +69,31 @@
     text-align: center;
     font-size: 2rem;
   }
+}
+
+.center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@font-face {
+  font-family: "phc_neon_tubes_2";
+  src: url("https://fonts.phcnetworks.net/neon/neon-tube-font/neon_tubes_2.woff2")
+      format("woff2"),
+    url("https://fonts.phcnetworks.net/neon/neon-tube-font/neon_tubes_2.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+i {
+  font-family: "phc_neon_tubes_2";
+  font-style: normal;
+  font-size: 200px;
+  color: #fff;
+  text-shadow: 0 0 30px #1c7947, 0 0 10px #42d385, 0 0 100px #42d385,
+    0 0 500px #1c7947, 5px 9px 5px rgba(0, 0, 0, 0.5);
+}
+i.off {
+  color: rgba(46, 46, 46, 0.61);
+  text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.5);
 }
