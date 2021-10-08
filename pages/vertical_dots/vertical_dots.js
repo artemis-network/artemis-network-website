@@ -23,7 +23,6 @@ const scroller = new IntersectionObserver(function (entries) {
 					targets: [points.children[1], points.children[2], points.children[3], points.children[4], points.children[5]],
 					scale: 1,
 				})
-				nav
 			}
 			if (entry.target.id === 'what_we_do') {
 				anime({
