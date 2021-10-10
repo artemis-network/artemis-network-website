@@ -1,0 +1,148 @@
+#particles-js {
+  position: fixed;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.sub_p_what_we_do {
+  background-image: linear-gradient(
+    to right top,
+    #35265c,
+    #32285b,
+    #2f295a,
+    #2c2b59,
+    #2a2c57,
+    #233763,
+    #17436e,
+    #004e78,
+    #006686,
+    #007d81,
+    #009069,
+    #5f9f4a
+  );
+}
+
+.sub_p_what_we_do .subtitle .main_heading,
+.sub_p_what_we_do .subtitle .sub_heading {
+  color: #fbfafd;
+}
+
+.sub_p_values {
+  background-image: linear-gradient(
+    to right top,
+    #f2dff0,
+    #f9e3ea,
+    #fbe8e7,
+    #faede9,
+    #f8f3ee,
+    #f7f4ef,
+    #f5f6f0,
+    #f4f7f2,
+    #eef6ef,
+    #e8f5ee,
+    #e0f3ee,
+    #d9f2f0
+  );
+}
+
+.sub_p_team {
+  background-image: linear-gradient(
+    to right,
+    #f6f8ee,
+    #fcf7ef,
+    #fff6f2,
+    #fff7f7,
+    #fef8fb,
+    #fdf7fb,
+    #fbf7fc,
+    #f9f6fc,
+    #f8f3fb,
+    #f7f0fa,
+    #f7edf9,
+    #f7eaf8
+  );
+}
+
+.sub_p_contact {
+  background-image: linear-gradient(
+    to right top,
+    #ffffff,
+    #fcfcfe,
+    #f9f8fd,
+    #f6f5fb,
+    #f3f1fa,
+    #f3eef9,
+    #f3ecf7,
+    #f4e9f5,
+    #f7e6f1,
+    #fbe4ed,
+    #fde2e7,
+    #ffe0e0
+  );
+}
+
+.subtitle .main_heading {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.underline {
+  width: 8rem;
+  text-align: center;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgba(255, 0, 128),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 10;
+  margin: 3rem 0;
+}
+
+.subtitle .sub_heading {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.socials,
+.verticals {
+  display: none;
+}
+
+.buttons_group {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  margin: 2rem;
+}
+
+.buttons_group div img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.m_sub_titles {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1366px) {
+}
