@@ -13,7 +13,7 @@ const whatWeDo = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    let sections = gsap.utils.toArray(".panel");
+    let sections = gsap.utils.toArray(".x_panel");
 
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
@@ -63,7 +63,7 @@ const whatWeDo = () => {
     <div className="what_we_do">
       {whatWeDoData.map((item) => {
         return (
-          <div key={item.main} className="product panel">
+          <div key={item.main} className="product x_panel">
             <img src={item.url} alt="" />
             <div className="text">
               <h2>{item.main}</h2>

@@ -23,12 +23,14 @@ const App = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray(".vpanel").forEach((panel, i) => {
+    gsap.utils.toArray(".panel").forEach((panel, i) => {
+      console.log(panel);
       ScrollTrigger.create({
         trigger: panel,
         start: "top top",
         pin: true,
         pinSpacing: false,
+        snap: 1 / 2,
       });
     });
   }, []);
@@ -111,17 +113,25 @@ const App = () => {
   const ContactChild = React.forwardRef((props, ref) => {
     return (
       <Element id="/contact" name="contact">
-        <div id="contactRefs" ref={contactRef} className="sub_p_contact">
+        <div id="contactRefs" ref={contactRef} className="sub_p_contact panel">
           <div className="subtitle hide">
             <div className="main_heading">Get in Touch</div>
             <div className="underline"></div>
             <div className="sub_heading">Some Text Comes Here</div>
           </div>
-          <Contact className="vpanel" />
+          <Contact />
         </div>
       </Element>
     );
   });
+
+  const FooterChild = () => {
+    return (
+      <div className="panel">
+        <Footer id="footer" />
+      </div>
+    );
+  };
 
   return (
     <React.Fragment>
@@ -145,8 +155,8 @@ const App = () => {
       <ValuesChild />
       <TeamChild />
       <ContactChild />
+      <FooterChild />
 
-      <Footer id="footer" className="vpanel" />
       <SocialBar id="socials" className="socials" />
     </React.Fragment>
   );

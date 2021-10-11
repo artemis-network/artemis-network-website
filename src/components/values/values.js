@@ -19,7 +19,7 @@ const values = () => {
     gsap.set(valuesSections, { xPercent: -110 * (valuesSections.length - 1) });
 
     gsap.to(valuesSections, {
-      xPercent: 65,
+      xPercent: 0,
       ease: "none",
       scrollTrigger: {
         trigger: ".values",

@@ -10,7 +10,7 @@ const navigationBar = () => {
         <div className="navigation_bar_home">
           <Link
             to="brand"
-            spy={true}
+            spy
             smooth={true}
             duration={500}
             className="bar_link"
@@ -23,7 +23,7 @@ const navigationBar = () => {
         <div className="navigation_bar_links">
           <Link
             to="whatWeDo"
-            spy={true}
+            spy
             smooth={true}
             duration={750}
             className="bar_link"
@@ -33,7 +33,7 @@ const navigationBar = () => {
           </Link>
           <Link
             to="values"
-            spy={true}
+            spy
             smooth={true}
             duration={1000}
             className="bar_link"
@@ -43,7 +43,7 @@ const navigationBar = () => {
           </Link>
           <Link
             to="team"
-            spy={true}
+            spy
             smooth={true}
             duration={1250}
             className="bar_link"
@@ -53,7 +53,7 @@ const navigationBar = () => {
           </Link>
           <Link
             to="contact"
-            spy={"true"}
+            spy
             smooth={"true"}
             duration={1500}
             className="bar_link"
