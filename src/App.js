@@ -3,8 +3,8 @@ import "./App.css";
 import React, { useEffect, useRef } from "react";
 import { gsap, ScrollTrigger } from "gsap/all";
 
-import NavBar from "./components/navbar/navigation_bar";
-import Menu from "./components/navbar/navigation_menu";
+import NavBar from "./components/navbar/navbar";
+import Menu from "./components/menu/menu";
 import Main from "./components/main/main";
 import WhatWeDo from "./components/whatWeDo/whatWeDo";
 import Trust from "./components/trust/trust";
@@ -24,7 +24,6 @@ const App = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray(".panel").forEach((panel, i) => {
-      console.log(panel);
       ScrollTrigger.create({
         trigger: panel,
         start: "top top",

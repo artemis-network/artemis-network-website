@@ -1,15 +1,15 @@
 import "./contact.css";
-
+import React from "react";
 import Tilt from "react-parallax-tilt";
+import Map from "./map";
 
 const contactComponent = () => {
   return (
     <div className="contact_page">
       <div className="two_split">
         <Tilt className="map" data-aos="zoom-in-up">
-          <svg id="my_dataviz" width="800" height="450"></svg>
+          <Map />
         </Tilt>
-
         <form
           action="https://formspree.io/f/myylvbab"
           method="POST"

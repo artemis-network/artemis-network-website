@@ -46,12 +46,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  svg {
     border: #31558d;
     box-shadow: var(--card-shadow);
     border-radius: 2vh;
-    transform: translateX(-2rem);
+    min-height: 30rem;
+    min-width: 50rem;
   }
 
   .two_split {
