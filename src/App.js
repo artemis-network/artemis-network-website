@@ -1,26 +1,30 @@
 import "./App.css";
 
-import React, { useEffect, useRef } from "react";
-import { gsap, ScrollTrigger } from "gsap/all";
-
-import NavBar from "./components/navbar/navbar";
-import Menu from "./components/menu/menu";
-import Main from "./components/main/main";
-import WhatWeDo from "./components/whatWeDo/whatWeDo";
-import Trust from "./components/trust/trust";
-import Values from "./components/values/values";
-import Team from "./components/team/team";
-import Contact from "./components/contact/contact";
-import Footer from "./components/footer/footer";
-import VerticalDots from "./components/vertical_dots/vertical_dots";
-import SocialBar from "./components/socialbar/socialbar";
-import { Element } from "react-scroll";
-
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import MobileComponents from "./components/mobile/mobile";
+import { Element } from "react-scroll";
+import { gsap, ScrollTrigger } from "gsap/all";
+
+import Navbar from "./components/desktop/navbar/navbar";
+import VerticalDots from "./components/desktop/vertical_dots/vertical_dots";
+import SocialBar from "./components/desktop/socialbar/socialbar";
+
+import WhatWeDo from "./components/desktop/whatWeDo/whatWeDo";
+import Trust from "./components/desktop/trust/trust";
+import Values from "./components/desktop/values/values";
+import Team from "./components/desktop/team/team";
+
+import Brand from "./components/shared/main/main";
+import Contact from "./components/shared/contact/contact";
+import Footer from "./components/shared/footer/footer";
+
+import "./components/desktop/desktop.css";
+
 const App = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray(".panel").forEach((panel, i) => {
@@ -34,21 +38,19 @@ const App = () => {
     });
   }, []);
 
-  useEffect(() => {
-    AOS.init({});
-  });
-
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const brandRef = React.useRef();
   const MainChild = React.forwardRef((props, ref) => {
     return (
       <Element id="/brand" name="brand">
         <div id="brandRefs" ref={brandRef}>
-          <Main />
+          <Brand />
         </div>
       </Element>
     );
   });
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const whatWeDoRef = React.useRef();
   const WhatWeDoChild = React.forwardRef((props, ref) => {
     return (
@@ -65,6 +67,7 @@ const App = () => {
     );
   });
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const trustRef = React.useRef();
   const TrustChild = React.forwardRef((props, ref) => {
     return (
@@ -76,6 +79,7 @@ const App = () => {
     );
   });
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const valuesRef = React.useRef();
   const ValuesChild = React.forwardRef((props, ref) => {
     return (
@@ -92,6 +96,7 @@ const App = () => {
     );
   });
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const teamRef = React.useRef();
   const TeamChild = React.forwardRef((props, ref) => {
     return (
@@ -108,7 +113,8 @@ const App = () => {
     );
   });
 
-  const contactRef = useRef();
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const contactRef = React.useRef();
   const ContactChild = React.forwardRef((props, ref) => {
     return (
       <Element id="/contact" name="contact">
@@ -125,17 +131,17 @@ const App = () => {
   });
 
   const FooterChild = () => {
-    return (
-      <div className="panel">
-        <Footer id="footer" />
-      </div>
-    );
+    return <Footer className="panel" />;
   };
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useEffect(() => {
+    AOS.init({});
+  });
 
   return (
     <React.Fragment>
-      <Menu />
-      <NavBar />
+      <Navbar />
       <VerticalDots
         refsList={[
           brandRef,
@@ -147,7 +153,6 @@ const App = () => {
         ]}
         className="verticals"
       />
-
       <MainChild />
       <WhatWeDoChild />
       <TrustChild />
@@ -155,7 +160,6 @@ const App = () => {
       <TeamChild />
       <ContactChild />
       <FooterChild />
-
       <SocialBar id="socials" className="socials" />
     </React.Fragment>
   );
