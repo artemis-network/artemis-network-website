@@ -88,7 +88,7 @@ const menuComponent = () => {
           </li>
           <li>
             <Link
-              to="contact"
+              to="contactMobile"
               spy
               smooth={"true"}
               duration={1500}
