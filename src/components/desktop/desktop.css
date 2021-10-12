@@ -1,0 +1,11 @@
+.desktop,
+.d_hide {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop,
+  .d_hide {
+    display: block;
+  }
+}

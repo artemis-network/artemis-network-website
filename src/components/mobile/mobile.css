@@ -1,0 +1,30 @@
+.mobile {
+  margin: 5rem 2rem;
+}
+
+.m_hide {
+  display: block;
+}
+
+hr {
+  margin: 4rem;
+  border-radius: 2vw;
+  border: 1px solid gray;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    margin: 5rem 8rem;
+  }
+
+  hr {
+    margin: 4rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobile,
+  .m_hide {
+    display: none;
+  }
+}

@@ -1,0 +1,40 @@
+.scroller {
+  position: fixed;
+  left: 1rem;
+  top: 20rem;
+  z-index: 999;
+}
+
+.points {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 1rem;
+  top: 15rem;
+  left: 5rem;
+}
+
+.point {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--primary-font-color);
+  transition: 0.25s all;
+}
+
+.active {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--primary-font-color);
+  transform: scale(2);
+  transition: 0.25s all;
+}
+
+.position_locator {
+  position: absolute;
+  top: 22rem;
+  left: 1.5rem;
+  transform: rotate(270deg);
+}

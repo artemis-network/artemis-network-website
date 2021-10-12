@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600&family=Lobster&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap");
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+*,
+html,
+body,
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-style);
+  color: var(--primary-font-color);
+}
+
+html,
+body {
+  box-sizing: border-box;
+  cursor: url("./assets/img/cursor.png") 16 16, pointer;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --theme: "light";
+  --background-color: #fbf4e9;
+  --navbar-color: #222629;
+  --primary-font-color: #2a2340;
+  --secondary-font-color: #ffff3f;
+  --card-boder-radius: 42px;
+  --card-background: #474b4f;
+  --card-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  --card-row-gaps: 3rem;
+  --card-column-gaps: 3rem;
+  --font-style: "Inter", sans-serif;
+  --title-font-style: "Staatliches", cursive;
+  --subtitle-font-style: "Lobster", cursive;
+  --logo-font: "Staatliches", cursive;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-track {
+  display: none;
+}
