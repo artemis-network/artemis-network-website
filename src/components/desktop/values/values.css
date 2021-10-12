@@ -56,3 +56,14 @@
     line-height: 1.5rem;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .values {
+    padding: 12rem 0;
+    column-gap: 4rem;
+  }
+
+  .value img {
+    width: 20rem;
+  }
+}

@@ -114,21 +114,27 @@ const desktop = () => {
   const contactRef = React.useRef();
   const ContactChild = React.forwardRef((props, ref) => {
     return (
-      <Element id="/contact" name="contact">
-        <div id="contactRefs" ref={contactRef} className="sub_p_contact panel">
-          <div className="subtitle hide">
-            <div className="main_heading">Get in Touch</div>
-            <div className="underline"></div>
-            <div className="sub_heading">Some Text Comes Here</div>
+      <div className="panel">
+        <Element id="/contact" name="contact">
+          <div id="contactRefs" ref={contactRef} className="sub_p_contact ">
+            <div className="subtitle hide">
+              <div className="main_heading">Get in Touch</div>
+              <div className="underline"></div>
+              <div className="sub_heading">Some Text Comes Here</div>
+            </div>
+            <Contact />
           </div>
-          <Contact />
-        </div>
-      </Element>
+        </Element>
+      </div>
     );
   });
 
   const FooterChild = () => {
-    return <Footer className="panel" />;
+    return (
+      <div className="panel">
+        <Footer />
+      </div>
+    );
   };
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
