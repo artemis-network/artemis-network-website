@@ -1,18 +1,17 @@
 import "./socialbar.css";
-
-import Twitter from "../../../assets/icons/twitter.svg";
-import Facebook from "../../../assets/icons/facebook.svg";
-import LinkedIn from "../../../assets/icons/linkedin.svg";
-import GitHub from "../../../assets/icons/github.svg";
-import InstaGram from "../../../assets/icons/instagram.svg";
-
-const socialsData = [Twitter, Facebook, LinkedIn, GitHub, InstaGram];
+import { socialsData } from "../../../data/socialsData";
 
 const socialBarComponent = () => {
   return (
     <div className="socials_hidden">
       {socialsData.map((data, i) => {
-        return <img key={i} className="social_img" src={data} alt="" />;
+        return (
+          <div key={data.link}>
+            <a href={data.link}>
+              <img className="social_img" src={data.icon} alt="" />
+            </a>
+          </div>
+        );
       })}
     </div>
   );

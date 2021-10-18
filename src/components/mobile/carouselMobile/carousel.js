@@ -16,7 +16,7 @@ const carousel = (props) => {
                 <img src={d.url} alt="" />
               </div>
               <p className="motto">{d.main}</p>
-              <p className="i_carousel_title">{d.title}</p>
+              <p className={props.styler + " i_carousel_title"}>{d.title}</p>
             </div>
           );
         })}

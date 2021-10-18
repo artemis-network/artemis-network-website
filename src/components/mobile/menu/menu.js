@@ -36,7 +36,7 @@ const menuComponent = () => {
         <ul>
           <li>
             <Link
-              to="brand"
+              to="brandMobile"
               spy
               smooth={"true"}
               duration={1500}

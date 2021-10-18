@@ -2,12 +2,20 @@
   display: none;
 }
 
+.weight {
+  display: none;
+}
+
 .form {
   border-radius: 2vh;
   background: #f0ecf8;
   box-shadow: var(--card-shadow);
   padding: 2rem;
   margin: 2rem;
+}
+
+form button {
+  cursor: url("../../../assets/img/cursor.png") 16 16, pointer;
 }
 
 textarea,
@@ -38,6 +46,11 @@ button {
   margin: auto;
 }
 
+.contact_page {
+  display: grid;
+  row-gap: 5rem;
+}
+
 @media screen and (min-width: 1024px) {
   input,
   textarea,
@@ -46,6 +59,11 @@ button {
   }
   .two_split {
     padding: 0 5rem;
+  }
+  .weight {
+    display: flex;
+    height: 10vh;
+    width: 100%;
   }
 }
 

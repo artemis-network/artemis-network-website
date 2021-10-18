@@ -93,13 +93,14 @@
 .subtitle .main_heading {
   width: 100%;
   font-size: 3rem;
-  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-weight: 1000;
   text-align: center;
 }
 
 .v_scroll_contact_footer {
   display: grid;
-  grid-template-columns: 1f;
+  grid-template-columns: 1fr;
 }
 
 .underline {
@@ -117,7 +118,7 @@
 }
 
 .subtitle .sub_heading {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   padding: 2rem;
 }

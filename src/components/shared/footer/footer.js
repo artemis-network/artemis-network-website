@@ -1,33 +1,44 @@
 import "./footer.css";
 
-import Facebook from "../../../assets/footer/facebook.svg";
-import GitHub from "../../../assets/footer/github.svg";
-import InstaGram from "../../../assets/footer/instagram.svg";
-import LinkedIn from "../../../assets/footer/linkedin.svg";
-import Twitter from "../../../assets/footer/twitter.svg";
 import Artemis from "../../../assets/img/artemis.png";
+import { socialsData } from "../../../data/socialsData";
+import { Link } from "react-scroll";
 
 const footer = () => {
   return (
     <div className="footer">
       <div className="footer_logo">
-        <img src={Artemis} alt="" />
+        <Link
+          to="brand"
+          spy
+          smooth={true}
+          duration={1500}
+          className="bar_link_i"
+          activeClass="bar_link vactive"
+        >
+          <img src={Artemis} alt="" />
+        </Link>
       </div>
 
-      <div className="footer_main">Artemis Network</div>
+      <div className="footer_main"><h2>
+        Artemis Network</h2></div>
 
       <div className="footer_socials">
-        <img className="social_img" src={InstaGram} alt="" />
-        <img className="social_img" src={Facebook} alt="" />
-        <img className="social_img" src={LinkedIn} alt="" />
-        <img className="social_img" src={Twitter} alt="" />
-        <img className="social_img" src={GitHub} alt="" />
+        {socialsData.map((data, i) => {
+          return (
+            <div key={data.link}>
+              <a href={data.link}>
+                <img className="social_img" src={data.icon} alt="" />
+              </a>
+            </div>
+          );
+        })}
       </div>
 
       <div className="terms">
         <div> 2021 © All rights reserved</div>
-        <div>Terms & Privacy</div>
-        <div> Crafted by us</div>
+        <div> </div>
+        <div> Crafted by @ArtemisNetwork </div>
       </div>
     </div>
   );

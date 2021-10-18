@@ -1,4 +1,9 @@
-import Praneeth from "../assets/team/chakri.jpg";
+import Praneeth from "../assets/team/praneeth.jpg";
+import Chakravardhan from "../assets/team/chakri.jpg";
+import Akash from "../assets/team/akash.jpg";
+import Shivam from "../assets/team/shivam.jpeg";
+import Sanjay from "../assets/team/sanjay.jpg";
+import Abhishek from "../assets/team/abhishek.jpeg";
 
 export const teamData = [
   {
@@ -10,41 +15,41 @@ export const teamData = [
     linkedInUrl: "6",
   },
   {
-    name: "Praneeth Nagu",
+    name: "Chakravardhan Reddy",
     designation: "Co-Founder",
-    avatarUrl: Praneeth,
+    avatarUrl: Chakravardhan,
     facebookUrl: "",
     twitterUrl: "",
     linkedInUrl: "5",
   },
   {
-    name: "Praneeth Nagu",
-    designation: "Co-Founder",
-    avatarUrl: Praneeth,
+    name: "Akash Madduru",
+    designation: "Software Engineer",
+    avatarUrl: Akash,
     facebookUrl: "",
     twitterUrl: "",
     linkedInUrl: "4",
   },
   {
-    name: "Praneeth Nagu",
-    designation: "Co-Founder",
-    avatarUrl: Praneeth,
+    name: "Chaudhary Shivam",
+    designation: "SDE Intern",
+    avatarUrl: Shivam,
     facebookUrl: "",
     twitterUrl: "",
     linkedInUrl: "3",
   },
   {
-    name: "Praneeth Nagu",
-    designation: "Co-Founder",
-    avatarUrl: Praneeth,
+    name: "Sanjay N",
+    designation: "SDE Intern",
+    avatarUrl: Sanjay,
     facebookUrl: "",
     twitterUrl: "",
     linkedInUrl: "2",
   },
   {
-    name: "Praneeth Nagu",
-    designation: "Co-Founder",
-    avatarUrl: Praneeth,
+    name: "Abhishek Tangod",
+    designation: "SDE Intern",
+    avatarUrl: Abhishek,
     facebookUrl: "",
     twitterUrl: "",
     linkedInUrl: "1",

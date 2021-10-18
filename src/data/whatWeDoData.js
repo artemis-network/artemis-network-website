@@ -1,38 +1,36 @@
-import FistBump from "../assets/values/fist-bump-gesture.png";
-import HandGuesture from "../assets/values/stop-hand-gesture.png";
-import Fist from "../assets/values/solidarity-fist.png";
-import CloudBall from "../assets/values/cloud-ball.png";
-import Hifi from "../assets/values/hifi.png";
+import Star from "../assets/others/star_perspective_matte_s-1-300x300.png";
+import Bank from "../assets/others/bank_perspective_matte_s-1-300x300.png";
+import App from "../assets/others/add_apps_perspective_matte_s-300x300.png";
+import Dice from "../assets/others/dice_perspective_matte_s-3-300x300.png";
+import DB from "../assets/others/database_perspective_matte_s-2-300x300.png";
 
 export const whatWeDoData = [
   {
-    main: "Commitment to Excellence",
-    title:
-      "We strive to deliver the highest quality and value possible through simple, easy, and relevant solutions with a determination to succeed",
-    url: FistBump,
+    main: "DEFI",
+    title: "Disrupting financial intermediaries with Decentralized Finance",
+    url: Bank,
   },
   {
-    main: "Transparency",
+    main: "DEX",
     title:
-      "We operate so that it is easy for others to see what actions we perform. We believe in open agendas, accompanied by the availability of complete information required for the sustainability of blockchain products",
-    url: HandGuesture,
+      "A fully decentralized exchange for prediction markets on future events",
+    url: DB,
   },
   {
-    main: "Social responsibility",
+    main: "DApps",
     title:
-      "We believe technology is a powerful propellant for social good and strive towards fostering a sustainable future where everyone has a share in the benefits and opportunities created by technology",
-    url: Fist,
+      "Building applications on a decentralized network with the use of smart contracts",
+    url: App,
   },
   {
-    main: "Growth Mindset",
-    title:
-      "We believe that everyone can grow and develop, that potential is nurtured, not pre-determined, and that anyone can change their mindset",
-    url: CloudBall,
+    main: "DAO-GOVERNED",
+    title: "Decentralized, trust-minimized and transparent governance",
+    url: Star,
   },
   {
-    main: "Diversity and Inclusion",
+    main: "Prediction Markets",
     title:
-      "We thrive on variety. We imbibe our employee's and customers' experiences, strengths, and different perspectives to inform, challenge, and broaden our thinking",
-    url: Hifi,
+      "Exchange-traded markets created for trading on the outcome of events",
+    url: Dice,
   },
 ];

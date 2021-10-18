@@ -1,5 +1,6 @@
 .mobile {
-  margin: 5rem 2rem;
+  margin: 2rem 2rem 10rem 2rem;
+  display: block;
 }
 
 .m_hide {
@@ -7,18 +8,18 @@
 }
 
 hr {
-  margin: 4rem;
+  margin: 4rem 8rem;
   border-radius: 2vw;
   border: 1px solid gray;
 }
 
 @media screen and (min-width: 768px) {
   .mobile {
-    margin: 5rem 8rem;
+    margin: 5rem 6rem;
   }
 
   hr {
-    margin: 4rem 8rem;
+    margin: 4rem 12rem;
   }
 }
 
@@ -26,5 +27,11 @@ hr {
   .mobile,
   .m_hide {
     display: none;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  hr {
+    border: none;
   }
 }

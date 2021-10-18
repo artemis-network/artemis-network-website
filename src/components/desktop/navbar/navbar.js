@@ -29,7 +29,7 @@ const navigationBar = () => {
             className="bar_link"
             activeClass="bar_link vactive"
           >
-            What we do
+            <h4>What we do</h4>
           </Link>
           <Link
             to="values"
@@ -39,7 +39,7 @@ const navigationBar = () => {
             className="bar_link"
             activeClass="bar_link vactive"
           >
-            Core Values
+            <h4>Core Values</h4>
           </Link>
           <Link
             to="team"
@@ -49,7 +49,7 @@ const navigationBar = () => {
             className="bar_link"
             activeClass="bar_link vactive"
           >
-            Our Team
+            <h4>Our Team</h4>
           </Link>
           <Link
             to="contact"
@@ -59,14 +59,16 @@ const navigationBar = () => {
             className="bar_link"
             activeClass="bar_link vactive"
           >
-            Contact Us
+            <h4>Contact Us</h4>
           </Link>
         </div>
         <div className="cta">
-          <div className="cta_careers">Apply now</div>
+          <div className="cta_careers">
+            <a href="https://www.linkedin.com/company/artemisnetwork/">Apply now</a>
+          </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

@@ -24,13 +24,11 @@ const desktop = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray(".panel").forEach((panel, i) => {
-      console.log(panel);
       ScrollTrigger.create({
         trigger: panel,
         start: "top top",
         pin: true,
         pinSpacing: false,
-        snap: 1 / 2,
       });
     });
   }, []);
@@ -114,18 +112,16 @@ const desktop = () => {
   const contactRef = React.useRef();
   const ContactChild = React.forwardRef((props, ref) => {
     return (
-      <div className="panel">
-        <Element id="/contact" name="contact">
-          <div id="contactRefs" ref={contactRef} className="sub_p_contact ">
-            <div className="subtitle hide">
-              <div className="main_heading">Get in Touch</div>
-              <div className="underline"></div>
-              <div className="sub_heading">Some Text Comes Here</div>
-            </div>
-            <Contact />
+      <Element id="/contact" name="contact">
+        <div id="contactRefs" ref={contactRef} className="sub_p_contact ">
+          <div className="subtitle hide">
+            <div className="main_heading">Get in Touch</div>
+            <div className="underline"></div>
+            <div className="sub_heading">Some Text Comes Here</div>
           </div>
-        </Element>
-      </div>
+          <Contact />
+        </div>
+      </Element>
     );
   });
 

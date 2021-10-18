@@ -5,6 +5,8 @@ import Menu from "./menu/menu";
 import Brand from "../shared/main/main";
 import Contact from "../shared/contact/contact";
 import Footer from "../shared/footer/footer";
+import SocialsBar from "../desktop/socialbar/socialbar";
+import TrustMobile from "./trustMobile/trustMobile";
 
 import { whatWeDoData } from "../../data/whatWeDoData";
 import { valuesData } from "../../data/valuesData";
@@ -18,7 +20,7 @@ const mobileComponents = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const MainChild = React.forwardRef((props, ref) => {
     return (
-      <Element id="/brand" name="brand">
+      <Element id="/brandMobile" name="brandMobile">
         <Brand />
       </Element>
     );
@@ -43,6 +45,7 @@ const mobileComponents = () => {
         <CarsouelMobile
           title={"Core Values"}
           data={valuesData}
+          styler={"spcae"}
         ></CarsouelMobile>
       </Element>
     );
@@ -73,8 +76,9 @@ const mobileComponents = () => {
       <Menu />
       <MainChild />
       <div className="mobile">
-        <hr />
         <WhatWeDoChild />
+        <hr />
+        <TrustMobile />
         <hr />
         <ValuesChild />
         <hr />
@@ -82,6 +86,7 @@ const mobileComponents = () => {
         <hr />
       </div>
       <ContactChild />
+      <SocialsBar />
     </div>
   );
 };
